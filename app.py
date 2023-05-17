@@ -8,7 +8,7 @@ from dotenv import load_dotenv
 import jwt
 import hashlib
 
-dot_env_path = join(dirname(__file__, '.env'))
+dot_env_path = join(dirname(__file__), '.env')
 load_dotenv(dotenv_path=dot_env_path)
 
 MONGODB_URI = os.environ.get('MONGODB_URI')
